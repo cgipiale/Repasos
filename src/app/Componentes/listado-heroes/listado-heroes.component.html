@@ -1,0 +1,32 @@
+<div class ="contenedor_header">
+    <div class ="principal">
+        <h1>Listado de  Personaje</h1>
+    </div>
+    <div>
+        <input id="busca" type="text" placeholder="Buscar"  src="../../Imagenes/visto.jpg">
+    </div>
+    <div>
+        <button type= "button" (click)= Crear()  >
+            <div class ="boton-imagen">
+                <img src= "../../Imagenes/edit2.jpg">  
+            </div>
+            <div> Nuevo </div>
+        </button>
+    </div>
+    <table>
+        <thead class="cabecera">
+            <tr>
+                <th> Foto </th>  
+                <th> Nombre </th>        
+            </tr>
+            
+        </thead>
+        <body class="detalle">
+            <tr *ngFor="let heroe of heroes" class="text-center">
+                <td><img [src]=heroe.image></td>
+                <td>{{heroe.title}}</td>
+            </tr>
+        </body>
+        
+    </table>
+</div>

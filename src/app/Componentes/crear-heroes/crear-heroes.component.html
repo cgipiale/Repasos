@@ -1,0 +1,72 @@
+
+<div class ="contenedor_header">
+    <div class ="principal">
+        <h1>Nuevo Personaje</h1>
+        <!--<p>Nombre:{{nombre}}</p>  toma la informacion desde la propiedad del .ts
+        <p>Descripcion:{{descripcion}}</p>  -->
+      
+            <div class ="ingresos">
+               <label for="text">Nombre:</label>
+               <br/>
+                <input id="txtnombre" type="text"  placeholder="Nombre" required> 
+                <!--<h3>Descripcion del personaje</h3>
+                <input id="descrip" type="text" placeholder="descripcion"> -->
+                <br/>
+                <br/>
+                <div>
+                    <label for="message">Descripción:</label>
+                    <br/>
+                    <textarea id="descrip" name="descripcion"  placeholder="Descripcion" cols="40" rows="6" required ></textarea>
+                </div>
+                <br/>
+                <label for="text">Ubicación</label>
+                <br/>
+                <input id="pathfoto" type="text"  placeholder="URL" required>
+                <br/>
+                <br/>
+            </div> 
+
+            <div class ="contenedor_footer">
+                <div class ="boton">
+                    
+                    <button type ="submit" (click)="guardarHeroe()">
+                        <div class ="boton-imagen">
+                            <img  src="/heroes/src/app/Imagenes/grb.jpg">
+                        </div>
+                        <div>Guardar</div>
+                    </button>
+                    <button type ="submit"  >
+                        <div class ="boton-imagen">
+                            <img src="/heroes/src/app/Imagenes/cancel.png">
+                        </div>
+                        <div> Cancelar </div>
+                    </button>
+                    
+                </div>
+        
+            </div>
+
+
+
+
+
+    </div>
+    <!--
+    <div class="contenedor-foto">                    
+        
+        <div class="fotos">
+            <img src="https://www.bing.com/th?id=OIP.XZEJToeO1FfWIQHW0WltBQHaE5&w=307&h=203&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+        </div>   
+        <div class="fotos">
+            <img  src="https://www.bing.com/images/search?view=detailV2&ccid=yGxVRNFu&id=9685953BB28B09A272466D8A2A00C1DD2B21198A&thid=OIP.yGxVRNFuWOpQfxhQgLoVzwHaE8&mediaurl=https%3a%2f%2fimg2.freepng.es%2f20180601%2frbl%2fkisspng-superhero-cartoon-drawing-comics-super-heroe-5b1111df59d851.254638301527845343368.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.c86c5544d16e58ea507f185080ba15cf%3frik%3dihkhK93BACqKbQ%26pid%3dImgRaw%26r%3d0&exph=600&expw=900&q=superheroes+en+formato+png&simid=608006729073365957&FORM=IRPRST&ck=662E79D740E29A1762190011AE72BDBD&selectedIndex=16">
+        </div>   
+        <div class="fotos">
+            <img  src="/heroes/src/app/Imagenes/araña.png">
+
+        </div>
+    </div>
+
+    -->  
+   
+</div>
+

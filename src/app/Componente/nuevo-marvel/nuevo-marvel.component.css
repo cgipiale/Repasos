@@ -1,0 +1,60 @@
+h2{
+    font-size: x-large;
+    text-align:center;
+    color:gray
+}
+.tarjetaNuevoHeroe{
+    display: inline-block;
+    border: 2px solid gray;
+    background-color: white;
+    width: 280px;
+    height: 390px;
+    padding: 0px 15px 10px 15px;
+    margin: 15px 15px 15px 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.botones{
+    padding: 3px;
+}
+
+#botones--botonC{
+    color:white;
+    background-color: red;
+    border-radius: 3px;
+    border: 1px solid gray;
+    width: 110px;
+    height: 30px;
+    font-size: small;
+    font-weight:bold;
+    margin: 5px;
+}
+#botones--botonG{
+    color:white;
+    background-color: red;
+    border-radius: 3px;
+    border: 1px solid gray;
+    width: 110px;
+    height: 30px;
+    font-size:small;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input{
+    border: 1% solid grey;
+    width: 245px;
+    height: 35px;
+    text-indent: 10px;
+}
+textarea{
+    border: 1% solid grey;
+    width: 245px;
+   
+    text-indent: 10px;
+}
+.msn-error{
+    color: red;
+    font-style: italic;
+    font-size: x-small;
+}

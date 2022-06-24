@@ -1,0 +1,50 @@
+<form (ngSubmit)="buscarMarvel()"> 
+<div class="row">
+    
+    <div class="col">
+        <div class="titulo">
+            <h2 >Listado de Heroes Marvel</h2>
+        </div>
+        <div>
+            <input class="input-buscar" type="text" placeholder="Buscar" [(ngModel)]="heroeBuscado" name="heroeBuscado" >
+            
+            <button class ="boton--boton1" type="button" (click)="ActivarNuevoHeroe()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                </svg>
+                
+                Nuevo
+            </button>
+        </div>
+
+    </div>
+    <div *ngIf="banderaNuevoHeroe">
+        <app-nuevo-marvel (OnClickCancelar)="OcultarNuevoHeroe($event)"></app-nuevo-marvel>
+    </div>
+
+    <div class="actualizar" *ngIf="banderaActualizaHeroe">
+        <app-actualiza-marvel (OnClickCancelActualizar)="OcultarActualizaHeroe($event)"></app-actualiza-marvel>
+
+    </div>
+    <div class="tarjetaHeroe" *ngFor="let heroe of heroesM">
+         
+        <div >
+            <!-- <img class="image-style" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/004tho_ons_crd_03.jpg">  -->
+            <img class="image-style" [src]=heroe.image>
+        </div>
+        <div class="style_title">
+            {{heroe.title}}
+        </div>
+        <div class="boton_boton2">
+            <button class="boton2 boton2-imagen" type ="submit"  (click)="ActivarActualizaHeroe(heroe.title)">
+
+            </button>
+            <button class="boton2 boton3-imagen" type="submit" (click)="EliminarMarvel(heroe._id!, heroe.title,true)">
+
+            </button>
+
+        </div>
+    </div>
+</div>
+</form>
